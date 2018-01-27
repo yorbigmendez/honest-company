@@ -1,7 +1,6 @@
 # honest-company
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This EmberJS web application is a small challenge for a job interview as a Jr Front End developer. This application consists of two screens, a report screen which contains fictitous data about a company and a settings screen which constains user information and a form for modifying the user´s data. This app was developed based on a given design and is used to demonstrate Javascript and CSS knowledge. 
 
 ## Prerequisites
 
