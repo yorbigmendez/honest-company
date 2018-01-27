@@ -1,0 +1,37 @@
+/*
+ * Web Fonts from fontspring.com
+ *
+ * All OpenType features and all extended glyphs have been removed.
+ * Fully installable fonts can be purchased at http://www.fontspring.com
+ *
+ * The fonts included in this stylesheet are subject to the End User License you purchased
+ * from Fontspring. The fonts are protected under domestic and international trademark and 
+ * copyright law. You are prohibited from modifying, reverse engineering, duplicating, or
+ * distributing this font software.
+ *
+ * (c) 2010-2016 Fontspring
+ *
+ *
+ *
+ *
+ * The fonts included are copyrighted by the vendor listed below.
+ *
+ * Vendor:      Typoforge Studio
+ * License URL: https://www.fontspring.com/licenses/typoforge-studio/webfont
+ *
+ *
+ */
+
+@font-face {
+    font-family: 'merlo_neueextra_light_italic';
+    src: url('merloneue-extralightitalic-webfont.eot');
+    src: url('merloneue-extralightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('merloneue-extralightitalic-webfont.woff2') format('woff2'),
+         url('merloneue-extralightitalic-webfont.woff') format('woff'),
+         url('merloneue-extralightitalic-webfont.ttf') format('truetype'),
+         url('merloneue-extralightitalic-webfont.svg#merlo_neueextra_light_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46 (44423) - http://www.bohemiancoding.com/sketch -->
+    <title>assets/refresh-date</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="50" cy="50" r="50"></circle>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="100" height="100" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <circle id="path-3" cx="50" cy="50" r="50"></circle>
+        <mask id="mask-4" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="100" height="100" fill="white">
+            <use xlink:href="#path-3"></use>
+        </mask>
+    </defs>
+    <g id="BizRight" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="assets/refresh-date" stroke="#FFFFFF" stroke-width="20">
+            <use id="days-remaining" mask="url(#mask-2)" stroke-dasharray="172.8571428571429,500" transform="translate(50.000000, 50.000000) scale(-1, 1) rotate(-45.000000) translate(-50.000000, -50.000000) " xlink:href="#path-1"></use>
+            <use id="days-passed" stroke-opacity="0.49" mask="url(#mask-4)" stroke-dasharray="62.85714285714286,500" transform="translate(50.000000, 50.000000) scale(-1, 1) rotate(-243.000000) translate(-50.000000, -50.000000) " xlink:href="#path-3"></use>
+        </g>
+    </g>
+</svg>

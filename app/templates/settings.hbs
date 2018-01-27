@@ -1,0 +1,132 @@
+{{outlet}}
+<div class="row">
+    <div class="col-sm-12 col-md-12 section">
+        <p class="heading">Account Settings</p>
+        <div class="col-md-5 offset-md-1 company-info float-left">
+            <div class="container">
+                <p class="company-name">The Honest Company, Inc.</p>
+                <p class="company-phone-address">12130 Milleninium Dr, Los Angeles, CA 90094</p>
+                <p class="company-phone-address">(888) 862-8818</p>
+                <p class="member">Your Member ID is <label class="member-id">791509951</label></p>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <button type="button" class="small-white-button logout float-right">LOGOUT OF XYZ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5 offset-md-1 float-right">
+            <form class="form-column">
+                <!-- Non Mode only -->
+                {{#unless isNameEditing}}
+                <div class="row">
+                    <div class="form-group col-md-8">
+                        <label class="form-label">Name</label>
+                        <input type="text" class="form-control custom-input" placeholder="{{user.firstName}} {{user.lastName}}" readonly>
+                    </div>
+                </div>
+                <button id="btnEditName" type="button" class="small-outlined-button" onclick={{action 'editCancelClickEvent' 'name' true}}>Edit</button>
+                {{/unless}}
+                <!-- Edit Mode only -->
+                {{#if isNameEditing}}
+                <div class="row">
+                    <div class="form-group col-md-8">
+                            <label class="form-label">Name</label>
+                            {{input type="text" value=userEdit.firstName class="form-control custom-input custom-input-edit input-unselected"}}
+                            <!--
+                            <input type="text" id="txtFirstName" class="form-control custom-input" placeholder="{{user.firstName}} {{user.lastName}}" value="{{user.firstName}}">
+                            -->
+                        </div>
+                    <div class="form-group col-md-8">
+                        <label class="form-label">Last Name</label>
+                        {{input type="text" value=userEdit.lastName class="form-control custom-input custom-input-edit input-unselected"}}
+                          <!--
+                        <input type="text" id="txtLastName" class="form-control custom-input" value="{{userEdit.lastName}}">
+                        -->
+                    </div>
+                </div>
+                <button id="btnSaveName" type="button" class="small-outlined-button" onclick={{action 'saveClickEvent' 'name'}}>Save</button>
+                <button id="btnCancelName" type="button" class="small-cancel-button" onclick={{action 'editCancelClickEvent' 'name' false}}>Cancel</button>
+                {{/if}}
+                <!-- Email is not beign edited -->
+                {{#unless isEmailEditing}}
+                    <div class="row">
+                        <div class="form-group col-md-8">
+                            <label class="form-label">Email</label>
+                            <input type="email" id="txtEmail" class="form-control custom-input" placeholder="{{user.email}}" readonly>
+                        </div>
+                    </div>
+                    <button type="button" class="small-outlined-button" onclick={{action 'editCancelClickEvent' 'email' true}}>Edit</button>
+                {{/unless}}
+                <!-- Email is beign edited -->
+                {{#if isEmailEditing}}
+                <div class="row">
+                    <div class="form-group col-md-8">
+                        <label class="form-label">Email</label>
+                        {{input type="text" value=user.email class="form-control custom-input custom-input-edit input-unselected"}}
+                    </div>  
+                </div>
+                <button type="button" class="small-outlined-button" onclick={{action 'saveClickEvent' 'email'}}>Save</button>
+                <button type="button" class="small-cancel-button" onclick={{action 'editCancelClickEvent' 'email' false}}>Cancel</button>
+                {{/if}}
+                
+                <!-- Password is not beign edited -->
+                {{#unless isPasswordEditing}}
+                <div class="row">
+                    <div class="form-group col-md-8">
+                        <label class="form-label">Password</label>
+                        <input type="password" id="txtPassword" class="form-control custom-input" placeholder="••••••••••" readonly>
+                        
+                    </div>
+                </div>
+                <button type="button" class="small-outlined-button" onclick={{action 'editCancelClickEvent' 'password' true}}>Edit</button> 
+                {{/unless}}
+                <!-- Password is beign edited -->
+                {{#if isPasswordEditing}}
+                <div class="row">
+                    <div class="form-group col-md-8">
+                        <label class="form-label">Enter Current Password</label>
+                        {{input type="password" value=userEdit.oldPassword class="form-control custom-input custom-input-edit input-unselected"}}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-8">
+                        <label class="form-label">New Password (8 character minimum)</label>
+                        {{input type="password" value=userEdit.newPassword class="form-control custom-input custom-input-edit input-unselected"}}
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-8">
+                        <label class="form-label">Re-enter New Password</label>
+                        {{input type="password" value=userEdit.confirmPassword class="form-control custom-input custom-input-edit input-unselected"}}
+                    </div>
+                </div>
+                <button type="button" class="small-outlined-button" onclick={{action 'saveClickEvent' 'password'}}>Save</button>
+                <button type="button" class="small-cancel-button" onclick={{action 'editCancelClickEvent' 'password' false}}>Cancel</button>
+                {{/if}}
+
+                
+            </form>
+        </div>
+    </div>
+</div>
+<!--Style for footer on settings page
+    Couldn´t find how to add this in another way-->
+<style>
+    .footer{
+        background-color: #000245;
+    }
+    .footer-icon{
+        background-color: #FFFFFF;
+        color: #000245;
+    }
+
+    .text-link{
+        color: #EFE8EF;
+    }
+
+    .footer-copyright{
+        color: #FFFFFF;
+    }
+</style>

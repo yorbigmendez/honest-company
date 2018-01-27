@@ -1,0 +1,122 @@
+{{outlet}}
+<div id="company-info" class="section">
+        <p class="heading col-xs-12">The Honest Company, Inc.</p>
+        <div class="row">
+            <div class="col-sm-12 col-md-3 col-xs-12">
+                <div class="tax-id-cirlce col-xs-12">
+                    <label class="tax-id-label">TAX ID</label><br>
+                    <label class="tax-id">xx-xxx</label><label class="tax-id-visible">4861</label>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-xs-12">
+                <div class="row vertical-spacing">
+                    <div class="col-md-12 col-xs-12">
+                        <label class="data-point-labels">DOING BUSINESS AS</label><br>
+                        <label class="dba">The Honest Company</label>
+                    </div>
+                </div>
+                <div class="row vertical-spacing">
+                    <div class="col-md-12 col-xs-12">
+                        <label class="data-point-labels">Address</label><br>
+                        <label class="data">12130 Millennium Dr, Los Angeles, CA 90094</label>
+                    </div>
+                </div>
+                <div class="row vertical-spacing">
+                    <div class="col-md-6 col-xs-12">
+                        <label class="data-point-labels">Phone Number</label><br>
+                        <label class="data">(888) 862-8818</label>
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                        <label class="data-point-labels">Website</label><br>
+                        <label class="data">honest.com</label>
+                        <div class="circular-button">
+                            {{fa-icon "arrow-right" size=20pt}}
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-sm-12 col-md-3 col-xs-12">
+                <div class="update-circle">
+                    <!--<img class="refresh-date" src="/sliced-assets/refresh-date.png"/>-->
+                    <div class="refresh-date col-xs-6 col-xs-offset-2">
+                        <label class="report-update-tag">REPORT UPDATES IN</label><br>
+                        <label class="oversized-number">22</label><br>
+                        <label class="report-days">DAYS</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+</div>
+<div id="credit-risk-score">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-4 credit-risk">
+            <img src="/sliced-assets/credit-risk.png" class="col-sm-12 col-md-12">
+            <br>
+            <p class="high-score-better text-center">Higher scores are better</p>
+        </div>
+        <div class="col-md-8 col-sm-12 col-xs-12">
+            <div class="row">
+                <label class="credit-risk-head col-sm-12 col-xs-12">Experian Credit Risk Score</label>
+            </div>
+            <div class="row">
+                <label class="credit-risk-sub-header col-sm-12 col-xs-12">Factors lowering this score</label>
+            </div>
+            <div class="row">
+                <ul class="fa-ul col-sm-12 col-xs-12">
+                    <li class="li-reasons-item col-sm-12 col-xs-12"><i class="fa-li fa fa-times"></i>
+                        <label class="li-reason-text col-sm-12 col-xs-12">Balance of recently delinquent comercial accounts</label>
+                    </li>
+                    <li class="li-reasons-item col-sm-12 col-xs-12"><i class="fa-li fa fa-times"></i>
+                        <label class="li-reason-text col-sm-12 col-xs-12">Balance of commercial accounts at worst delinquency</label>
+                    </li>
+                    <li class="li-reasons-item col-sm-12 col-xs-12"><i class="fa-li fa fa-times"></i>
+                        <label class="li-reason-text col-sm-12 col-xs-12">Commercial account delinquency in the last 6 months</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                {{#unless isHowCalculatedClicked}}
+                <button class="small-outlined-button calculated-button" onclick={{action 'howCalculatedClick' }}>
+                    <i class="fa fa-info-circle">
+                    </i>
+                    <label class="small-outlined-button-label">
+                        How is this calculated?
+                    </label>
+                </button>
+                {{/unless}}
+                {{#if isHowCalculatedClicked}}
+                    <hr style="border: 1px solid #FF3636; width:90%">
+                    <div class="row explanation">
+                        <i class="fa fa-info-circle col-md-1">
+                        </i>
+                        <label class="col-md-10">This score uses tradeline and collections infromation, public filings, and other variables to predict the risk of serious credit delinquencies within the next 12 months.</label>
+                    </div>
+                {{/if}}
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <p class="cta-strip">
+            <label class="cta-text">This report was generated on </label><label class="cta-text-bold"> July 17, 2017</label>
+            <label class="cta-text"> and will be updated in </label><label class="cta-text-bold"> 22 days</label>
+            <img src="/sliced-assets/experian.png" class="experian-image float-right">
+        </p>
+    </div>
+</div>
+
+<!--
+<div class="jumbo">
+    <div class="right tomster"></div>
+    <h2>About Super Rentals</h2>
+    <p>
+        The Super Rentals website is a delightful project created to explore Ember.
+        By building a property rental site, we can simultaneously imagine traveling
+        AND building Ember applications.
+    </p>
+    <p>{{user.name}}</p>
+    {{input type='text' value=user.name}}
+-->

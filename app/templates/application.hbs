@@ -1,0 +1,17 @@
+{{header-menu}}
+<script>
+    $(document).ready(function(){
+        $(window).bind('scroll', function() {
+          console.log($( window ).height());
+            var navHeight = 70;
+            if ($(window).scrollTop() > navHeight) {
+                $('nav').addClass('fixed');
+            }
+            else {
+                $('nav').removeClass('fixed');
+            }
+        });
+    });
+</script>
+{{outlet}}
+{{page-footer}}

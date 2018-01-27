@@ -1,0 +1,879 @@
+
+
+
+/* Fonts*/
+@font-face {
+  font-family: roboto-regular;
+  src: url('/fonts/Roboto/roboto-regular.eot') format('eot'),
+  url('/fonts/Roboto/roboto-regular.svg') format('svg'),
+  url('/fonts/Roboto/roboto-regular.ttf') format('ttf'),
+  url('/fonts/Roboto/roboto-regular.woff') format('woff'),
+  url('/fonts/Roboto/roboto-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: merloneue_semibolditalic;
+  color: #000245;
+  src: url('/fonts/merloneue_semibolditalic/merloneue-semibolditalic-webfont.eot') format('eot'),
+  url('/fonts/merloneue_semibolditalic/merloneue-semibolditalic-webfont.svg') format('svg'),
+  url('/fonts/merloneue_semibolditalic/merloneue-semibolditalic-webfont.ttf') format('ttf'),
+  url('/fonts/merloneue_semibolditalic/merloneue-semibolditalic-webfont.woff') format('woff'),
+  url('/fonts/merloneue_semibolditalic/merloneue-semibolditalic-webfont.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: merloneue_semibold;
+  color: #000245;
+  src: url('/fonts/merloneue_semibold/merloneue-semibold-webfont.eot') format('eot'),
+  url('/fonts/merloneue_semibold/merloneue-semibold-webfont.svg') format('svg'),
+  url('/fonts/merloneue_semibold/merloneue-semibold-webfont.ttf') format('ttf'),
+  url('/fonts/merloneue_semibold/merloneue-semibold-webfont.woff') format('woff'),
+  url('/fonts/merloneue_semibold/merloneue-semibold-webfont.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: merloneue_regular;
+  color: #000245;
+  src: url('/fonts/merloneue_regular/merloneue-regular-webfont.eot') format('eot'),
+  url('/fonts/merloneue_regular/merloneue-regular-webfont.svg') format('svg'),
+  url('/fonts/merloneue_regular/merloneue-regular-webfont.ttf') format('ttf'),
+  url('/fonts/merloneue_regular/merloneue-regular-webfont.woff') format('woff'),
+  url('/fonts/merloneue_regular/merloneue-regular-webfont.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: merloneue_bolditalic;
+  src: url('/fonts/merloneue_bolditalic/merloneue-bolditalic-webfont.eot') format('eot'),
+  url('/fonts/merloneue_bolditalic/merloneue-bolditalic-webfont.svg') format('svg'),
+  url('/fonts/merloneue_bolditalic/merloneue-bolditalic-webfont.ttf') format('ttf'),
+  url('/fonts/merloneue_bolditalic/merloneue-bolditalic-webfont.woff') format('woff'),
+  url('/fonts/merloneue_bolditalic/merloneue-bolditalic-webfont.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: merloneue_italic;
+  src: url('/fonts/merloneue_italic/merloneue-italic-webfont.eot') format('eot'),
+  url('/fonts/merloneue_italic/merloneue-italic-webfont.svg') format('svg'),
+  url('/fonts/merloneue_italic/merloneue-italic-webfont.ttf') format('ttf'),
+  url('/fonts/merloneue_italic/merloneue-italic-webfont.woff') format('woff'),
+  url('/fonts/merloneue_italic/merloneue-italic-webfont.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: merloneue_medium;
+  src: url('/fonts/merloneue_medium/merloneue-medium-webfont.eot') format('eot'),
+  url('/fonts/merloneue_medium/merloneue-medium-webfont.svg') format('svg'),
+  url('/fonts/merloneue_medium/merloneue-medium-webfont.ttf') format('ttf'),
+  url('/fonts/merloneue_medium/merloneue-medium-webfont.woff') format('woff'),
+  url('/fonts/merloneue_medium/merloneue-medium-webfont.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: merloneue_mediumitalic;
+  src: url('/fonts/merloneue_mediumitalic/merloneue-mediumitalic-webfont.eot') format('eot'),
+  url('/fonts/merloneue_mediumitalic/merloneue-mediumitalic-webfont.svg') format('svg'),
+  url('/fonts/merloneue_mediumitalic/merloneue-mediumitalic-webfont.ttf') format('ttf'),
+  url('/fonts/merloneue_mediumitalic/merloneue-mediumitalic-webfont.woff') format('woff'),
+  url('/fonts/merloneue_mediumitalic/merloneue-mediumitalic-webfont.woff2') format('woff2');
+}
+@font-face {
+  font-family: kaleidos_regular;
+  src: url('/fonts/kaleidos_regular/kaleidos-webfont.eot') format('eot'),
+  url('/fonts/kaleidos_regular/kaleidos-webfont.svg') format('svg'),
+  url('/fonts/kaleidos_regular/kaleidos-webfont.ttf') format('ttf'),
+  url('/fonts/kaleidos_regular/kaleidos-webfont.woff') format('woff'),
+  url('/fonts/kaleidos_regular/kaleidos-webfont.woff2') format('woff2');
+}
+/* GENERAL */
+
+body {
+}
+
+.section{
+  margin-top: 160px;
+  
+}
+
+.small-outlined-button{
+  width: 60px;
+  height: 30px;
+  border-radius: 15px;
+  border:1px solid #FF3636;
+  text-transform: uppercase;
+  font-size: 14pt;
+  font-family: merloneue_semibolditalic;
+  color: #000245;
+  background-color: #FFFFFF;
+  margin-left: 10px;
+  margin-bottom: 60px;
+}
+.small-outlined-button:hover{
+  border:2px solid #FF3636;
+}
+
+.small-outlined-button-label{
+  font-size: 10pt;
+  font-family: merloneue_semibolditalic; 
+}
+
+.small-white-button{
+  height: 40px;
+  border: 0px;
+  border-radius: 20px;
+  font-size: 14pt;
+  font-family: merloneue_semibolditalic;
+  background-color: #FFFFFF;
+  color: #FF3636;
+}
+.small-white-button:hover{
+  font-family: merloneue_bolditalic;
+}
+
+.small-white-button-label{
+  fill: #FFFFFF;
+  font-family: merloneue_semibolditalic; 
+}
+
+/* Heading */
+.heading{
+  text-align:center;
+  font-size: 44pt;
+  font-family: merloneue_semibolditalic;
+  color: #000245;
+}
+/* Top bar - Navigation Settings */
+.site-logo{
+  width: 130px;
+  height: 100px;
+  margin-left: 20px;
+  padding-top: 20px;
+}
+
+.site-logo-shrink{
+  height: 65px;
+  width: 50px;
+  padding-top: 10px;
+}
+
+.navbar-right{
+  margin-right: 20px;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  height: 70px;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background: #fff;
+  z-index: 1;
+}
+
+.mi-nav{
+  display: inline-block;
+  padding: 24px 40px;
+  font-size: 18pt;
+  color: #000245;
+  font-family: merloneue_medium;
+}
+
+.mi-nav:hover{
+  color: #FF5050;
+}
+
+/* Sections */
+
+
+/* Company Info */
+#company-info{
+  background-color: #E4E8EF;
+}
+
+/* Tax ID */
+.tax-id-cirlce{
+  vertical-align: center;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 200px;
+  height: 200px;
+  background: #000245;
+  text-align: center;
+  border-radius: 50%;
+}
+.tax-id-label{
+  margin-top:20px;
+  font-family: merloneue_bolditalic;
+  color: #FF3636;
+}
+
+.tax-id{
+  color: #FFFFFF;
+  font-family: merloneue_regular;
+}
+
+.tax-id-visible{
+  font-family: merloneue_semibold;
+  color: #FFFFFF;
+}
+.data-point-labels{
+  font-family: merloneue_bolditalic;
+  color: #FF3636;
+  text-transform: uppercase;
+}
+
+.dba{
+  font-family: kaleidos_regular;
+  color: #000245;
+  font-size: 38pt;
+  margin-top: 10px;
+}
+
+.data{
+  font-family: merloneue_regular;
+  font-size: 28pt;
+  color: #000245;
+}
+
+.circular-button{
+  padding-left:10px;
+  width: 40px;
+  height: 40px;
+  background-color: #FF3636;
+  color: #E4E8EF;
+  border-radius: 50%;
+}
+
+.circular-button:hover{
+  color: #FF5050;
+}
+
+/*Report update tag */
+.update-circle{
+  background: #FF3636;
+  border-radius: 50%;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.oversized-number{
+  text-decoration: solid;
+  color: #FFFFFF;
+  font-family: kaleidos_regular;
+}
+
+.report-days{
+ font-size: 26pt;
+ font-family: merloneue_semibolditalic;
+ color: #FFFFFF;
+}
+
+.report-update-tag{
+  font-size: 16 pt;
+  font-family: merloneue_bolditalic;
+  color: #FFFFFF;
+  margin-top: 20px;
+}
+
+/*  SECTION Credit Risk SCORE */
+#credit-risk-score{
+  background-color: #000245;
+  color: #FFFFFF;
+  padding-bottom: 80px;
+}
+
+.credit-risk{
+  background-color: #000245;
+}
+.high-score-better{
+  margin-top: 30px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-family: merloneue_bolditalic;
+  font-size: 14pt;
+}
+
+.credit-risk-head{
+  margin-top: 60px;
+  color: #FFFFFF;
+  font-size: 44pt;
+  font-family: merloneue_semibolditalic;
+}
+.credit-risk-sub-header{
+  margin-top:30px;
+  font-size: 16pt;
+  font-family: merloneue_bolditalic;
+  text-transform: uppercase;
+  color: #FF3636;
+  padding-bottom: 20px;
+}
+.li-reasons-item {    
+  font-size: 28pt;
+  color: #FF3636;
+  font-family: kaleidos_regular;
+  padding-left: 20px;
+}
+
+.li-reason-text{
+  font-size: 28pt;
+  font-family: merloneue_regular;
+  color: #FFFFFF;
+}
+
+.calculated-button{
+  margin-top: 40px;
+  width: 240px;
+  background-color: Transparent;
+  color: #FFFFFF;
+}
+
+.explanation{
+  font-size: 18pt;
+  font-family: merloneue_regular;
+}
+
+
+#generation-date{
+  height: 10vh;
+  background-color: #E4E8EF;
+}
+
+.cta-strip{
+  height: 80px;
+  background-color: #EFE8Ef;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.cta-text{
+  font-size: 18pt;
+  font-family: merloneue_italic;
+  text-align: left;
+}
+
+.cta-text-bold{
+  font-size: 18pt;
+  font-family: merloneue_bolditalic;
+  text-align: left;
+}
+
+.experian-image{
+  height: 30px;
+}
+
+/*  Settings */
+.company-info{
+  margin-top: 80px;
+  background-color:#FF3636;
+  border-radius: 5pt;
+  color: #FFFFFF;
+}
+.company-name{
+  font-size: 36pt;
+  font-family: merloneue_semibolditalic;
+}
+
+.company-phone-address{
+  font-size: 16pt;
+  font-family: merloneue_regular;
+  margin-top: 20px;
+}
+
+.member{
+  font-size: 20px;
+  font-family: merloneue_italic;
+  margin-top: 20px;
+}
+
+.member-id{
+  font-size: merloneue_semibolditalic;
+  font-size: 20pt;
+}
+
+.logout{
+  width: 200px;
+  margin-bottom: 80px;
+}
+.form-column{
+  margin-top: 80px;
+}
+.form-label{
+  font-size: 14pt;
+  font-family: merloneue_medium;
+  color: #000245;
+}
+.form-control {
+  border: 0;
+}
+.custom-input{
+  margin-top: 10px;
+  height: 40px;
+  font-size: 24pt;
+  font-family: roboto-regular;
+  border-radius: 3px;
+  padding-left: 10px;
+}
+
+.custom-input-edit:focus{
+  box-shadow: none;
+  border-bottom: 3px solid#FF3636;
+}
+
+.input-unselected{
+  border-bottom: 3px solid#E4E8EF;
+}
+
+.input-error{
+  border-bottom: 3px solid#FF3636;
+  text-shadow: 10px 40px #FF3636;
+  opacity: 100%;
+}
+
+.small-cancel-button{
+  margin-left: 20px;
+  font-size: 14pt;
+  border: 0;
+  font-family: merloneue_mediumitalic;
+  background-color: #FFFFFF;
+  color: #FF3636;
+}
+
+
+
+/* Footer */ 
+.column{
+  float:right;
+}
+
+#right-column{
+  margin-top: 50px;
+  margin-left: 25%;
+  margin-right: 25%;
+  background-color: #E4E8EF;
+  height: 50px;
+}
+
+
+.footer-heading{
+  margin-top: 90px;
+  font-size: 36pt;
+  font-family: kaleidos_regular;
+  color: #FF3636;
+}
+
+.text-link{
+  margin-top: 25px;
+  font-size: 18pt;
+  font-family: merloneue_regular;
+  color: #000000;
+}
+
+.text-link:hover{
+  color: #FF5050;
+}
+
+.footer-right-column{
+  background-color: #E4E8EF;
+  border-radius: 10px;
+}
+
+.footer-right-column-heading{
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 36pt;
+  font-family: merloneue_semibolditalic;
+  color: #000245;
+}
+
+.footer-phone-detail{
+  margin-top: 20px;
+  margin-left: 20px;
+  padding-top: 30px;
+}
+.footer-phone-icon{
+  width: 30px;
+  height: 30px;
+  background-color: #FF3636;
+  border-radius: 50%;
+  color: #E4E8EF;
+  text-align: center;
+}
+.footer-phone-number{
+  text-decoration: underline;
+  margin-left: 10px;
+  font-size: 26pt;
+  font-family: merloneue_semibolditalic;
+  color: #FF3636;
+}
+
+.footer-phone-details-text{
+  margin-left: 40px;
+  margin-top: 10px;
+  font-size: 14pt;
+  font-family: merloneue_regular;
+  color: #000245;
+}
+
+.footer-phone-details-text-bold{
+  font-size: 14pt;
+  font-family: merloneue_semibold;
+  color: #FF3636;
+}
+
+.footer-email{
+  margin-left: 10px;
+  margin-bottom: 30px;
+  font-size: 26pt;
+  font-family: merloneue_semibolditalic;
+  color: #FF3636;
+}
+
+.footer-icon{
+  width: 50px;
+  margin-top: 20px;
+  margin-right: 10px;
+  padding-top: 10px;
+  height: 50px;
+  background-color: #000245;
+  border-radius: 50%;
+  color: #EfE8EF;
+  text-align: center;
+}
+
+.footer-icon:hover{
+  background-color: #FF5050;
+  color: #FFFFFF;
+
+}
+
+.footer-copyright{
+  margin-top: 60px;
+  font-family: merloneue_regular;
+  color: #000245;
+}
+@media (min-width:320px) {
+   /* smartphones, Android phones, landscape iPhone */ 
+  .data-point-labels{
+    font-size: 14pt;
+  }
+  .cta-strip{
+    height: 100%;
+  }
+  .fa-ul{
+    padding-left: 20px;
+  }
+  .data{
+    font-size: 20pt;
+  }
+  .vertical-spacing{
+    margin-top: 30px;
+  }
+  .report-update-tag{
+    font-size: 10 pt;
+    margin-top: 12px;
+  }
+  .report-days{
+    font-size: 22pt;
+    margin-bottom: 15px;
+   }
+   .oversized-number{
+    font-size: 84pt;
+  }
+  .tax-id-label{
+    font-size: 14pt;
+   }
+  .tax-id{
+    font-size: 16pt;
+  }
+  .tax-id-visible{
+    font-size: 16pt;
+    margin-left: 15px;
+  }
+  .section{
+    padding-bottom: 60px;
+  }
+  .credit-risk-head{
+    margin-top: 60px;
+    padding-left: 20px;
+  }
+  .credit-risk-sub-header{
+    margin-top:30px;
+    font-size: 14pt;
+    padding-left: 20px;
+  }
+  .li-reasons-item {    
+    font-size: 20pt;
+  }
+  .li-reason-text{
+    font-size: 15pt;
+  }
+  .calculated-button{
+    margin-top: 30px;
+  }
+  .footer-right-column-heading{
+    font-size: 34pt;
+    text-align: center;
+  }
+  .footer-right-column{
+    margin-top: 20px;
+  }
+  .footer-heading{
+    text-align: center;
+  }
+  .footer-icon{
+    text-align: center;
+  }
+  .text-link{
+    text-align: center;
+  }
+  .credit-risk{
+    margin-top: 30px;
+  }
+  .high-score-better{
+    margin-top: 30px;
+    font-size: 14pt;
+  }
+  .explanation{
+    font-size: 16pt;
+    margin-top: 30px;
+  }
+}
+@media (min-width:801px) {
+  .data-point-labels{
+    font-size: 14pt;
+  }
+  .data{
+    font-size: 20pt;
+  }
+  .vertical-spacing{
+    margin-top: 30px;
+  }
+  .update-circle{
+    margin-top: 15px;
+  }
+  .update-circle{
+    margin-top: 30px;
+  }
+  .report-update-tag{
+    font-size: 12 pt;
+    margin-top: 12px;
+  }
+  .report-days{
+    font-size: 22pt;
+    margin-bottom: 15px;
+   }
+  .oversized-number{
+    font-size: 84pt;
+  }
+  .tax-id-label{
+    font-size: 14pt;
+   }
+  .tax-id{
+    font-size: 16pt;
+  }
+  .tax-id-visible{
+    font-size: 16pt;
+    margin-left: 10px;
+  }
+  .section{
+    padding-bottom: 60px;
+  }
+  .credit-risk-head{
+    margin-top: 60px;
+  }
+  .credit-risk-sub-header{
+    margin-top:30px;
+    font-size: 14pt;
+  }
+  .li-reasons-item {    
+    font-size: 20pt;
+  }
+  
+  .li-reason-text{
+    font-size: 15pt;
+  }
+  .calculated-button{
+    margin-top: 30px;
+  }
+  .footer-right-column-heading{
+    font-size: 36pt;
+  }
+  .logout{
+    margin-bottom: 60px;
+  }
+  .credit-risk{
+    margin-top: 60px;
+  }
+  .high-score-better{
+    margin-top: 30px;
+    font-size: 14pt;
+  }
+  .explanation{
+    font-size: 16pt;
+    margin-top: 30px;
+  }
+  /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+}
+@media (min-width:1025px) { 
+  .data-point-labels{
+    font-size: 16pt;
+  }
+  .data{
+    font-size: 24pt;
+  }
+  .vertical-spacing{
+    margin-top: 30px;
+  }
+  .update-circle{
+    margin-top: 15px;
+  }
+  .report-update-tag{
+    font-size: 16 pt;
+    margin-top: 20px;
+  }
+  .report-days{
+    font-size: 30pt;
+    margin-bottom: 20px;
+   }
+  .oversized-number{
+    font-size: 110pt;
+  }
+  .tax-id-label{
+    font-size: 16pt;
+   }
+  .tax-id{
+    font-size: 24pt;
+  }
+  .tax-id-visible{
+    font-size: 24pt;
+    margin-left: 20px;
+  }
+  .section{
+    padding-bottom: 60px;
+  }
+  .credit-risk-head{
+    margin-top: 60px;
+  }
+  .credit-risk-sub-header{
+    margin-top:30px;
+    font-size: 16pt;
+  }
+  .li-reasons-item {    
+    font-size: 24pt;
+  }
+  
+  .li-reason-text{
+    font-size: 15pt;
+  }
+  .calculated-button{
+    margin-top: 30px;
+  }
+  .footer-right-column-heading{
+    font-size: 36pt;
+  }
+  .footer-right-column-heading{
+    font-size: 36pt;
+  }
+  .company-info{
+    margin-top: 70px;
+  }
+  .logout{
+    margin-bottom: 60px;
+  }
+  .credit-risk{
+    margin-top: 60px;
+  }
+  .high-score-better{
+    margin-top: 30px;
+    font-size: 16pt;
+  }
+  .explanation{
+    font-size: 18pt;
+    margin-top: 30px;
+  }
+  /* big landscape tablets, laptops, and desktops */ 
+}
+@media (min-width:1281px) {
+  .data-point-labels{
+    font-size: 16pt;
+  }
+  .data{
+    font-size: 28pt;
+  }
+  .vertical-spacing{
+    margin-top: 40px;
+  }
+  .update-circle{
+    margin-top: 20px;
+  }
+  .report-update-tag{
+    font-size: 16 pt;
+    margin-top: 20px;
+  }
+  .report-days{
+    font-size: 36pt;
+    margin-bottom: 30px;
+   }
+  .oversized-number{
+     font-size: 140pt;
+   }
+  .tax-id-label{
+    font-size: 16pt;
+   }
+  .tax-id{
+    font-size: 28pt;
+  }
+  .tax-id-visible{
+    font-size: 28pt;
+    margin-left: 20px;
+  }
+  .section{
+    padding-bottom: 80px;
+  }
+  .credit-risk-head{
+    margin-top: 80px;
+  }
+  .credit-risk-sub-header{
+    margin-top:40px;
+    font-size: 16pt;
+  }
+  .li-reasons-item {    
+    font-size: 28pt;
+  }
+  
+  .li-reason-text{
+    font-size: 20pt;
+  }
+  .calculated-button{
+    margin-top: 40px;
+  }
+  .footer-right-column-heading{
+    font-size: 36pt;
+  }
+  .company-info{
+    margin-top: 80px;
+  }
+  .logout{
+    margin-bottom: 80px;
+  }
+
+  .credit-risk{
+    margin-top: 80px;
+  }
+  .high-score-better{
+    margin-top: 40px;
+    font-size: 16pt;
+  }
+
+  .explanation{
+    font-size: 18pt;
+    margin-top: 40px;
+  }
+  /* hi-res laptops and desktops */ 
+}
