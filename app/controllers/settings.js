@@ -1,23 +1,27 @@
 import Controller from '@ember/controller';
+import EmberObject from '@ember/object';
+
+//Declare User EmberObject for controller use
+const User = EmberObject.extend({
+    firstName: 'Jessica',
+    lastName: 'Alba',
+    email: "jessica@honest.com",
+    password: 'emberjsfun',
+    newPassword: '',
+    oldPassword: '',
+    confirmPassword: ''
+});
+
 export default Controller.extend({
-    user: {
-        firstName: 'Jessica',
-        lastName: 'Alba',
-        email: "jessica@honest.com",
-        password: 'emberjsfun'
-    },
-    userEdit:{
-        firstName: '',
-        lastName: '',
-        email: '',
-        oldPassword: '',
-        newPassword: '',
-        confirmPassword: ''
-    },
+    user: null,
     //Booleans of is enabled
     isNameEditing: false,
     isPasswordEditing:false,
     isEmailEditing:false,
+    init(){
+        this._super(...arguments);
+        this.set('user',User.create());
+    },
     //Functions
     editClick(element){
         if(element == "name"){
@@ -28,7 +32,7 @@ export default Controller.extend({
             this.set('isPasswordEditing', true);
         }
     },
-    //Cancel click
+    //button click event for name, email and password to show or hide edit text boxes
     buttonClick(element, state){
         if(element == "name"){
             this.set('isNameEditing',state);
@@ -38,12 +42,12 @@ export default Controller.extend({
             this.set('isPasswordEditing', state);
         }
     },
-    //Save click
+    //Save click for name, email and password
     saveClick(element){
         if(element == "name"){
             //Set first and lastName
-            this.set('user.firstName',this.userEdit.firstName);
-            this.set('user.lastName',this.userEdit.lastName);
+            this.set('user.firstName',this.user.firstName);
+            this.set('user.lastName',this.user.lastName);
             this.set('isNameEditing',false);
         }
         if(element == "email"){
